@@ -1,0 +1,149 @@
+body {
+    background: linear-gradient(#e66465, #9198e5);
+    font-size: 20px;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+a {
+    color: gainsboro;
+    text-decoration: none;
+}
+
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+#root {
+    /*height: 100%;*/
+}
+
+.cams {
+    /*display: grid;*/
+    padding-top: 40px;
+    background-color: #101010;
+    /*grid-template-columns: repeat(auto-fit, minmax(5%, 1fr));*/
+    /*grid-auto-flow: row dense;*/
+    width: 100%;
+    height: 60%;
+    text-align: center;
+}
+
+.video-container {
+    position: relative;
+    width: min-content;
+    display: inline-grid;
+}
+
+.overlay-desc {
+    position: absolute;
+    top: 0;
+    color: gainsboro;
+}
+
+video {
+    border: black 1px solid;
+    height: 250px;
+    filter: grayscale(100);
+    margin: 0 0 0 0;
+    display: block;
+}
+
+.message {
+    background: #0000001c;
+    color: #222222;
+    font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    word-wrap: break-word;
+}
+
+.message span {
+    font-weight: bold;
+}
+
+.message-content {
+    display: inline;
+    margin-left: 5px;
+}
+
+time {
+    color: #222222;
+    font-size: 14px;
+}
+
+.chat {
+    margin: 0 auto;
+    width: 50%;
+}
+
+.chat-box {
+    height: 300px;
+    overflow: auto;
+    max-height: 100vh;
+}
+
+#chatbox::-webkit-scrollbar {
+    width: 6px;
+    background: transparent;
+}
+
+#chatbox::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+#chatbox::-webkit-scrollbar-thumb {
+    background: black;
+    border-radius: 10px;
+}
+
+.chat input {
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    padding: 8px 1px;
+    margin-top: 0.1em;
+    border-bottom: 2px solid black;
+    width: 100%;
+    font-size: 20px;
+}
+
+input {
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    font-size: 1em;
+    padding: 8px 1px;
+    margin-top: 0.1em;
+    border-bottom: 2px solid black;
+    width: 100%;
+    font-family: 'Lato', sans-serif;
+}
+
+input::placeholder {
+    color: gainsboro;
+}
+
+input[type=submit] {
+    background-color: black;
+    border: none;
+    color: gainsboro;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin-top: 25px;
+    cursor: pointer;
+}
+
+.login {
+    width: 300px;
+    height: 200px;
+    background: #0000001c;
+    margin: 200px auto auto;
+}
+
+.login form {
+    width: 90%;
+    align-content: center;
+    margin: auto;
+}
